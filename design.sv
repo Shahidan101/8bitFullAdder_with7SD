@@ -6,9 +6,10 @@ module full_adder(
   output S, Cout
 );
   
+  // Nets in-between the gate stages
   wire net1, net2, net3;
   
-  // Refering to Digital Circuit of Full Adder
+  // Referring to Digital Circuit of Full Adder
   xor (net1, A, B);
   xor (S, net1, Cin);
   and (net3, A, B);
@@ -100,7 +101,6 @@ module full_adder8(
     .S(S[7]),
     .Cout(Cout)
   );
-  
 endmodule 
 
 // Module for adding 3 when bin value >= 5
@@ -133,7 +133,7 @@ endmodule
 
 // Module for Binary to BCD converter
 
-// Refering to Digital Circuit from
+// Referring to Digital Circuit from
 // electronics.stackexchange.com/questions/440910/k-maps-for-forming-8bit-binary-to-8bit-bcd-digital-circuit
 
 module BIN2BCD(
