@@ -37,7 +37,7 @@ module test_adder_8bit();
     
     // Counter to determine simulation stop
     counter = 0;
-    // Initialise Counter as 0
+    // Initialise Clock as 0 (LOW signal)
     CLK = 1'b0;
   end
 
